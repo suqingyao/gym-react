@@ -13,17 +13,16 @@ const AnchorLink: FC<
     event.preventDefault()
     if (propsOffset) {
       offset.current = propsOffset
-    } else {
-      offset.current = parseInt(String(propsOffset))
     }
-    const id = event.currentTarget.getAttribute('href')?.slice(0) as string
+    const id = event.currentTarget.getAttribute('href')?.slice(1) as string
     const $anchor = document.getElementById(id)
     if (!$anchor) {
       throw new Error('please confirm anchor link address exist')
     }
     const offsetTop = $anchor!.getBoundingClientRect()?.top + window.pageYOffset
     window.scroll({
-      top: offsetTop - offset.current
+      top: offsetTop - offset.current,
+      behavior: 'smooth'
     })
   }
 
