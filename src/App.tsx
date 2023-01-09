@@ -5,6 +5,7 @@ import Benefits from '@/layouts/benefits'
 import OurClasses from '@/layouts/our-classes'
 import ContactUs from './layouts/contact-us'
 import { SelectedPage } from './typing/const'
+import Footer from './layouts/footer'
 
 function App() {
   const [selectedPage, setSelectedPage] = useState(SelectedPage.Home)
@@ -33,6 +34,7 @@ function App() {
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   )
 }
