@@ -7,7 +7,7 @@ export default defineConfig({
   transformers: [transformerDirectives()],
   theme: {
     colors: {
-      gary: {
+      gray: {
         20: '#F8F4EB',
         50: '#EFE6E6',
         100: '#DFCCCC',

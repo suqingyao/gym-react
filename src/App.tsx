@@ -1,10 +1,30 @@
+import NavBar from '@/layouts/navbar'
+import { useEffect, useState } from 'react'
+import { SelectedPage } from './typing/const'
+
 function App() {
+  const [selectedPage, setSelectedPage] = useState(SelectedPage.Home)
+  const [isTopOfPage, setIsTopOfPage] = useState(true)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.screenY === 0) {
+        setIsTopOfPage(true)
+        setSelectedPage(SelectedPage.Home)
+      }
+      if (window.scrollY !== 0) setIsTopOfPage(false)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <div className="app">
-      <div className="i-heroicons:archive-box-20-solid text-primary-500"></div>
-      <h1 className="text-very-cool">hello</h1>
-      <h1 className="text-primary-100">hello</h1>
-      <h2 className="md:text-primary-500">llll</h2>
+    <div className="app bg-gray-20">
+      <NavBar
+        isTopOfPage={isTopOfPage}
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
+      />
     </div>
   )
 }
