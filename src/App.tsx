@@ -3,6 +3,7 @@ import NavBar from '@/layouts/navbar'
 import Home from '@/layouts/home'
 import Benefits from '@/layouts/benefits'
 import OurClasses from '@/layouts/our-classes'
+import ContactUs from './layouts/contact-us'
 import { SelectedPage } from './typing/const'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
     </div>
   )
 }

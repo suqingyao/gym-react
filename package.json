@@ -11,7 +11,8 @@
     "classnames": "^2.3.2",
     "framer-motion": "^8.2.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.5"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.1.8",
