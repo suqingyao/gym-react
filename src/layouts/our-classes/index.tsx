@@ -72,8 +72,8 @@ const OurClasses: FC<OurClassesProps> = ({ setSelectedPage }) => {
             </p>
           </div>
         </motion.div>
-        <div className="mt-10 w-full h-353px overflow-x-auto overflow-y-hidden">
-          <ul className="w-2800px whitespace-nowrap">
+        <div className="mt-10 w-5/6 mx-auto overflow-x-auto overflow-y-hidden">
+          <ul className="w-2800px whitespace-nowrap flex gap-10 justify-between">
             {classes.map((item, index) => (
               <Class
                 key={`${item.name}-${index}`}

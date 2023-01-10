@@ -29,7 +29,7 @@ const Benefit: FC<BenefitProps> = ({
 }) => {
   return (
     <motion.div
-      className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center"
+      className="flex-1 mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center flex flex-col justify-between"
       variants={childVariants}
     >
       <div className="mb-4 flex justify-center">
@@ -40,7 +40,7 @@ const Benefit: FC<BenefitProps> = ({
       <h4 className="font-bold">{title}</h4>
       <p className="py-6">{description}</p>
       <AnchorLink
-        className="text-sm font-bold text-primary-500 underline-dashed hover:text-secondary-500"
+        className="mt-auto text-sm font-bold text-primary-500 underline-dashed hover:text-secondary-500"
         onClick={() => setSelectedPage(SelectedPage.ContactUs)}
         href={`#${SelectedPage.ContactUs}`}
       >
