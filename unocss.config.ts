@@ -2,6 +2,7 @@ import { defineConfig } from 'unocss'
 import presetUno from '@unocss/preset-uno'
 import presetIcons from '@unocss/preset-icons'
 import transformerDirectives from '@unocss/transformer-directives'
+import { url } from 'inspector'
 export default defineConfig({
   presets: [presetUno(), presetIcons()],
   transformers: [transformerDirectives()],
@@ -27,16 +28,36 @@ export default defineConfig({
       dmsans: ['DM Sans', 'sans-serif'],
       montserrat: ['Montserrat', 'sans-serif']
     },
-    content: {
-      evolvetext: "url('@/assets/EvolveText.png')",
-      abstractwaves: "url('@/assets/AbstractWaves.png')",
-      sparkles: "url('@/assets/Sparkles.png')",
-      circles: "url('@/assets/Circles.png')"
-    },
     breakpoints: {
       xs: '480px',
       sm: '768px',
       md: '1060px'
     }
-  }
+  },
+  rules: [
+    [
+      'content-evolvetext',
+      {
+        content: `url('@/assets/EvolveText.png')`
+      }
+    ],
+    [
+      'content-abstractwaves',
+      {
+        content: `url('@/assets/AbstractWaves.png')`
+      }
+    ],
+    [
+      'content-sparkles',
+      {
+        content: `url('@/assets/Sparkles.png')`
+      }
+    ],
+    [
+      'content-circles',
+      {
+        content: `url('@/assets/Circles.png')`
+      }
+    ]
+  ]
 })
