@@ -2,6 +2,12 @@
 
 this is a basic react demo
 
+## run
+
+```sh
+npm run dev
+```
+
 ## stack
 
 - react
