@@ -2,7 +2,7 @@
 
 this is a basic react demo
 
-## feature
+## stack
 
 - react
 - typescript
@@ -12,3 +12,5 @@ this is a basic react demo
 - unocss
 
 ## screenshot
+
+![20230124140535](https://cully-blog.oss-cn-chengdu.aliyuncs.com/20230124140535.png)
