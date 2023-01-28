@@ -1,5 +1,5 @@
 import { SelectedPage } from '@/typing/const'
-import { FC } from 'react'
+import { FC, FormEvent } from 'react'
 import ContactUsPageGraphic from '@/assets/ContactUsPageGraphic.png'
 import { motion } from 'framer-motion'
 import HText from '@/components/HText'
@@ -17,7 +17,7 @@ const ContactUs: FC<ContactUsProps> = ({ setSelectedPage }) => {
     trigger,
     formState: { errors }
   } = useForm()
-  const onSubmit = async (e: any) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     const isValid = await trigger()
     if (!isValid) {
       e.preventDefault()

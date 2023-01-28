@@ -6,7 +6,7 @@ type AnchorLinkProps = {
 }
 
 const AnchorLink: FC<
-  PropsWithChildren<AnchorHTMLAttributes<any> & AnchorLinkProps>
+  PropsWithChildren<AnchorHTMLAttributes<HTMLAnchorElement> & AnchorLinkProps>
 > = ({ offset: propsOffset, children, ...rest }) => {
   const offset = useRef(0)
   const smoothScroll = (event: MouseEvent) => {
