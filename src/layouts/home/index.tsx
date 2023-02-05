@@ -1,14 +1,14 @@
-import { SelectedPage } from '@/typing/const'
-import { FC } from 'react'
-import HomePageText from '@/assets/HomePageText.png'
 import HomePageGraphic from '@/assets/HomePageGraphic.png'
-import SponsorRedBull from '@/assets/SponsorRedBull.png'
+import HomePageText from '@/assets/HomePageText.png'
 import SponsorForbes from '@/assets/SponsorForbes.png'
 import SponsorFortune from '@/assets/SponsorFortune.png'
-import useMediaQuery from '@/hooks/useMediaQuery'
+import SponsorRedBull from '@/assets/SponsorRedBull.png'
 import ActionButton from '@/components/ActionButton'
 import AnchorLink from '@/components/AnchorLink'
+import useMediaQuery from '@/hooks/useMediaQuery'
+import { SelectedPage } from '@/typing/const'
 import { motion } from 'framer-motion'
+import { FC } from 'react'
 
 type HomeProps = {
   setSelectedPage: (value: SelectedPage) => void

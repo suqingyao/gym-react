@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react'
-import NavBar from '@/layouts/navbar'
-import Home from '@/layouts/home'
 import Benefits from '@/layouts/benefits'
+import Home from '@/layouts/home'
+import NavBar from '@/layouts/navbar'
 import OurClasses from '@/layouts/our-classes'
+import { useEffect, useState } from 'react'
 import ContactUs from './layouts/contact-us'
-import { SelectedPage } from './typing/const'
 import Footer from './layouts/footer'
+import { SelectedPage } from './typing/const'
 
 function App() {
   const [selectedPage, setSelectedPage] = useState(SelectedPage.Home)

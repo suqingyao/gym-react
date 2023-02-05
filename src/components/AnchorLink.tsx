@@ -1,5 +1,5 @@
-import { FC, MouseEvent, PropsWithChildren, useRef } from 'react'
 import type { AnchorHTMLAttributes } from 'react'
+import { FC, MouseEvent, PropsWithChildren, useRef } from 'react'
 
 type AnchorLinkProps = {
   offset?: number

@@ -1,11 +1,10 @@
-import { SelectedPage } from '@/typing/const'
-import { FC } from 'react'
-import { motion } from 'framer-motion'
-import HText from '@/components/HText'
-import { BenefitType } from '@/typing/const'
-import Benefit from './Benefit'
 import BenefitsPageGraphic from '@/assets/BenefitsPageGraphic.png'
 import ActionButton from '@/components/ActionButton'
+import HText from '@/components/HText'
+import { BenefitType, SelectedPage } from '@/typing/const'
+import { motion } from 'framer-motion'
+import { FC } from 'react'
+import Benefit from './Benefit'
 
 const benefits: Array<BenefitType> = [
   {

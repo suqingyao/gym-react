@@ -1,8 +1,8 @@
-import { SelectedPage } from '@/typing/const'
-import { FC, FormEvent } from 'react'
 import ContactUsPageGraphic from '@/assets/ContactUsPageGraphic.png'
-import { motion } from 'framer-motion'
 import HText from '@/components/HText'
+import { SelectedPage } from '@/typing/const'
+import { motion } from 'framer-motion'
+import { FC, FormEvent } from 'react'
 import { useForm } from 'react-hook-form'
 
 type ContactUsProps = {
